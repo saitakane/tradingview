@@ -1,0 +1,83 @@
+
+
+
+
+
+git config --global user.name "Matchmon"
+
+git config --global user.email "maoky7584@gmail.com"
+
+
+
+◆１．パイソンコードを作成
+　 ファイル名.py　で保存
+
+
+◆2. ローカルでパイソンを実行
+　cmdから、「python ファイル名.py」
+
+「python app.py」
+
+
+◆２．作成したパイソンを、今のフォルダからGitHubにアップロードする
+　git push origin master
+
+
+◆３．Renderで、（再）デプロイ　→　コードを修正したら、都度行う
+Render のダッシュボードに戻る
+デプロイ済みの Web Service を開く
+「Manual Deploy」→ 「Clear Build Cache」→ 「Deploy Latest Commit」
+デプロイが成功するか確認
+
+
+
+https://dashboard.render.com/web/srv-cuk40il6l47c73c81oh0/deploys/dep-cuk5aetds78s739knmh0
+
+
+
+
+◆公開URLでパイソンが動作しているか確認するURL
+https://flask-app-m00l.onrender.com/
+
+※flask上で動作する
+
+
+
+
+
+
+------------------------
+
+◆ Flask アプリとは？
+Flask（フラスク） は、Python で Web アプリ を作るためのフレームワークです。
+Flask を使うと、Python のコードで Web サイトや API を作成できます。
+
+?? Flask アプリの役割
+Flask アプリは、以下のような動きをします。
+
+1. ユーザーが Web サイトにアクセスする
+例：https://flask-app.onrender.com/ にアクセス
+
+2. Flask アプリがリクエストを受け取る
+「どのページを表示するか？」や「どんなデータを送るか？」を判断
+
+3.Python のコードが動く
+ユーザーのリクエストに応じて、データを処理したり、ページを作成したりする
+
+4.HTML や JSON を返す
+Web ページを表示したり、API のデータを返したりする
+
+
+
+
+◆Render とは？
+Render は、GitHub などに保存されたコードを、インターネット上に公開（デプロイ）するサービス です。
+
+・GitHub にアップロードしたコードを Render が自動で取得し、サーバー上で動作させる
+・flask-app.onrender.com のような URL で 誰でも Flask アプリにアクセスできるようになる
+・GitHub に新しいコードをプッシュすると Render が自動で更新する（デプロイ）
+
+?? 例：Render を使う流れ
+GitHub にコードをアップロード（git push origin master）
+Render が GitHub からコードを取得し、アプリを起動する
+公開 URL（例：https://flask-app.onrender.com/）でアプリが使えるようになる
